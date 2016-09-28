@@ -56,6 +56,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Catalogo.Data\Catalogo.Data.csproj">
+      <Project>{e4a909c8-525f-4fd8-af3a-393d5357fa20}</Project>
+      <Name>Catalogo.Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Catalogo.Entities.Dto\Catalogo.Entities.Dto.csproj">
       <Project>{0bb5cd9c-17c6-490c-8192-cad3679e0497}</Project>
       <Name>Catalogo.Entities.Dto</Name>

@@ -10,11 +10,12 @@ namespace Catalogo.Entities
     public partial class ProductoCategoria
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public long IdProductoCategoria { get; set; }
 
-        public long IdProducto { get; set; }
+        public long? IdProducto { get; set; }
 
-        public int IdCategoria { get; set; }
+        public int? IdCategoria { get; set; }
 
         public virtual Categoria Categoria { get; set; }
 

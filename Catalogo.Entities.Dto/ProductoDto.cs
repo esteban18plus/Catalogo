@@ -18,6 +18,8 @@ namespace Catalogo.Entities.Dto
         [StringLength(500)]
         public string Descripcion { get; set; }
 
-        public decimal Precio { get; set; }
+        public decimal? Precio { get; set; }
+
+        public bool? Activo { get; set; }
     }
 }

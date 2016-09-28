@@ -12,9 +12,10 @@ namespace Catalogo.Entities
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Producto()
         {
-            ProductoCategorias = new HashSet<ProductoCategoria>();
+            ProductoCategoria = new HashSet<ProductoCategoria>();
         }
 
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public long Id { get; set; }
 
         [Required]
@@ -26,7 +27,9 @@ namespace Catalogo.Entities
 
         public decimal? Precio { get; set; }
 
+        public bool? Activo { get; set; }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ProductoCategoria> ProductoCategorias { get; set; }
+        public virtual ICollection<ProductoCategoria> ProductoCategoria { get; set; }
     }
 }

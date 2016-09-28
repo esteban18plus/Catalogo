@@ -7,7 +7,7 @@ using Catalogo.Entities.Dto;
 
 namespace Catalogo.Data.Interfaz
 {
-    interface IProducto:IBaseData<ProductoDto>
+    public interface IProductoData:IBaseData<ProductoDto>
     {
 
     }

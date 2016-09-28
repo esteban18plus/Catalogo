@@ -12,7 +12,7 @@ namespace Catalogo.Entities
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Categoria()
         {
-            ProductoCategorias = new HashSet<ProductoCategoria>();
+            ProductoCategoria = new HashSet<ProductoCategoria>();
         }
 
         public int Id { get; set; }
@@ -21,9 +21,9 @@ namespace Catalogo.Entities
         [StringLength(200)]
         public string Descripcion { get; set; }
 
-        public bool? Estado { get; set; }
+        public bool Estado { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ProductoCategoria> ProductoCategorias { get; set; }
+        public virtual ICollection<ProductoCategoria> ProductoCategoria { get; set; }
     }
 }
